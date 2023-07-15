@@ -1,0 +1,5 @@
+{
+  "repositoryName": "libres-chats-en-bastide",
+  "adapter": "@slicemachine/adapter-nuxt",
+  "libraries": ["./slices"]
+}

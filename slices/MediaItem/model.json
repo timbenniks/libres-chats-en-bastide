@@ -1,0 +1,23 @@
+{
+  "id": "media_item",
+  "type": "SharedSlice",
+  "name": "MediaItem",
+  "description": "MediaItem",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {},
+      "items": {
+        "media": {
+          "type": "Link",
+          "config": { "label": "Media", "placeholder": "", "select": "media" }
+        }
+      }
+    }
+  ]
+}

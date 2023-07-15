@@ -1,0 +1,183 @@
+{
+  "id": "chat",
+  "label": "Chat",
+  "format": "page",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": { "config": { "label": "UID" }, "type": "UID" },
+      "nom": {
+        "type": "Text",
+        "config": { "label": "Nom", "placeholder": "" }
+      },
+      "image": {
+        "type": "Image",
+        "config": { "label": "Image", "constraint": {}, "thumbnails": [] }
+      },
+      "sexe": {
+        "type": "Select",
+        "config": {
+          "label": "Sexe",
+          "placeholder": "",
+          "options": ["Mâle", "Femelle"],
+          "default_value": "Mâle"
+        }
+      },
+      "date_de_naissance": {
+        "type": "Date",
+        "config": { "label": "Date de naissance", "placeholder": "" }
+      },
+      "identifie_par_puce_electronique": {
+        "type": "Boolean",
+        "config": {
+          "label": "Identifié par puce électronique",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "vaccinee": {
+        "type": "Boolean",
+        "config": {
+          "label": "Vaccinée",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "deparasitee": {
+        "type": "Boolean",
+        "config": {
+          "label": "Déparasitée",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "teste_sida": {
+        "type": "Select",
+        "config": {
+          "label": "Testé SIDA",
+          "placeholder": "",
+          "options": ["Pas testé", "Positif", "Négatif"],
+          "default_value": "Pas testé"
+        }
+      },
+      "teste_leucose": {
+        "type": "Select",
+        "config": {
+          "label": "Testé Leucose",
+          "placeholder": "",
+          "options": ["Pas Testé", "Positif", "Négatif"],
+          "default_value": "Pas Testé"
+        }
+      },
+      "certificat_de_bonne_sante": {
+        "type": "Boolean",
+        "config": {
+          "label": "Certificat de bonne santé",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "carnet_de_sante": {
+        "type": "Boolean",
+        "config": {
+          "label": "Carnet de santé",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "prescription_future_sterilisation": {
+        "type": "Boolean",
+        "config": {
+          "label": "Prescription future stérilisation",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "habitue_avec_chien": {
+        "type": "Boolean",
+        "config": {
+          "label": "Habitue avec chien",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "habitue_avec_chats": {
+        "type": "Boolean",
+        "config": {
+          "label": "Habitue avec chats",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "caractere": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Caractère",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,list-item,heading3"
+        }
+      },
+      "ville_famille_daccueil": {
+        "type": "Text",
+        "config": { "label": "Ville famille d’accueil", "placeholder": "" }
+      },
+      "reserve": {
+        "type": "Boolean",
+        "config": {
+          "label": "Réservé",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "adopte": {
+        "type": "Boolean",
+        "config": {
+          "label": "Adopté",
+          "default_value": false,
+          "placeholder_true": "true",
+          "placeholder_false": "false"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": { "choices": { "media_item": { "type": "SharedSlice" } } }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      },
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": { "height": 1260, "width": 2400 },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}
